@@ -21,6 +21,7 @@ jobs:
       - name: Build repository 
         run: | 
           git submodule update --init 
+          autoreconf -i
           ./configure --with-oniguruma=builtin
           make -j8
       
