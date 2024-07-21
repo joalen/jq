@@ -29,7 +29,7 @@ jobs:
           ./configure --with-oniguruma=builtin
           make -j8
 
-      - name: Install Dr. Memory
+      - name: Install DynamoRIO
         if: runner.os == 'Linux'
         run: | 
           sudo apt-get update
